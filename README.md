@@ -30,7 +30,7 @@ docker run -p 8501:8501 deluloop
 
 This project was built and presented for the Music Hack Day at ADCx India 2025 https://audio.dev/adcx-india-25/
 
-Demo: https://drive.google.com/file/d/19ZUuHIMaOiaToT_uqX5C51Zemq5u_cqO/view?t=1
+Slides: https://docs.google.com/presentation/d/1Ew_HtBLr9Gzsm3wgPVsIQbz3i7g1ZRGHvXYJxGfhTD4
 
 ### References
 
