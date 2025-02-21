@@ -12,7 +12,7 @@ pip install -r requirements.txt
 Create a .env file with HF_KEY
 
 ```sh
-HF_KEY="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"
+HF_KEY="test"
 ```
 
 Run the app
