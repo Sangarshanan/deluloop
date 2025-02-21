@@ -8,6 +8,9 @@ import torchaudio
 from audiocraft.models import JASCO
 from audiorecorder import audiorecorder
 from huggingface_hub import login
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Login to Hugging Face Hub
 if 'hf_logged_in' not in st.session_state:
@@ -18,7 +21,7 @@ if not st.session_state.hf_logged_in:
     login(os.environ.get("HF_KEY")) # Add Hugging Face API key to env
     st.session_state.hf_logged_in = True
     st.session_state.model = JASCO.get_pretrained(
-        'facebook/jasco-chords-drums-melody-1B',
+        'facebook/jasco-chords-drums-melody-400M',
         chords_mapping_path='assets/chord_to_index_mapping.pkl',
     )
     st.session_state.model.set_generation_params(

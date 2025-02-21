@@ -4,14 +4,28 @@ Generative looper for musicians built with [streamlit](https://streamlit.io/) an
 
 Install requirements
 
-```
+```sh
 pip install -r requirements.txt
+```
+
+
+Create a .env file with HF_KEY
+
+```sh
+HF_KEY="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"
 ```
 
 Run the app
 
-```
+```sh
 streamlit run app.py
+```
+
+Docker build & run
+
+```sh
+docker build -t deluloop .
+docker run -p 8501:8501 deluloop
 ```
 
 This project was built and presented for the Music Hack Day at ADCx India 2025 https://audio.dev/adcx-india-25/
